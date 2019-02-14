@@ -1,24 +1,22 @@
 <?php
 
-require 'MezzoDiTrasporto.php';
-require 'Trait.php';
 
 
 //l extend puo essere usato solo per un unica classe, per questo si usano i trait
-class Auto extends MezzoDiTrasporto {
+class Sci {
 
     use commonTrait;
 
     public $modello;
     public $marca;
 
-    function __construct($mar, $mod, $num, $cost)
+    function __construct($mar, $mod, $pos, $cost)
     {
         //come richiamare il construct della classe padre
         parent::__construct();
        $this->marca =$mar;
        $this->modello = $mod;
-       $this->numPersone = $num;
+       $this->posizione = $pos;
        $this->costo = $cost;
     }
 

@@ -1,32 +1,26 @@
 <?php
 
-//ho bisogno della CLASSE Auto e lo prendo dal suo file
-require 'Auto.php';
+//magazzino sci
 
 
+require 'Sci.php';
 
 
-//creo varie ISTANZE
 
 //#1
-// $lancia = new Auto();
-
-// $lancia->modello = 'Delta';
-// $lancia->marca = 'Lancia';
-
-// //#2
-// $alfaRomeo = new Auto();
-
-// $alfaRomeo->modello = 'Giulia';
-// $alfaRomeo->marca = 'Alfa Romeo';
-
-
-//grazie al costruttore posso rendere le istanze piu comode da scrivere:
-
-//#1
-$lancia = new Auto('', 'Delta', 5, 10000);
+$salomon = new Auto('Salomon', 'Delta', 5, 10000);
 //#2
-$alfaRomeo = new Auto('Alfa Romeo', 'Giulia', 4, 35700);
+$dynafit = new Auto('Dynafit', 'Giulia', 4, 35700);
+//#3
+$scott = new Auto('Scott', 'Giulia', 4, 35700);
+//#4
+$k2 = new Auto('K2', 'Giulia', 4, 35700);
+//#5
+$skitrab = new Auto('Ski Trab', 'Giulia', 4, 35700);
+//#6
+$blackcrows = new Auto('Black Crows', 'Giulia', 4, 35700);
+//#7
+$volkl = new Auto('Volkl', 'Giulia', 4, 35700);
 
 
 
